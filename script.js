@@ -1,0 +1,1 @@
+const ring=document.getElementById("ring");function start(){ring.play().catch(()=>{});if(navigator.vibrate){setInterval(()=>navigator.vibrate([300,200,300]),1200);}}document.body.addEventListener("click",start,{once:true});window.onload=start;
